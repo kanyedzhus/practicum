@@ -15,8 +15,8 @@ This project essentially has two pages:
 
 - A basic landing page, where business owners can:
 
-  - business owners can get in touch with bootcamp staff via the contact form on the landing page. This sends an email that also includes the name, organization, phone number and email of the sender.
-  - business owners can use the projects submission form to submit a file with their design requirements, along with their name, organization, phone number and email.
+  - get in touch with bootcamp staff via the contact form on the landing page. This sends an email that also includes the name, organization, phone number and email of the sender.
+  - use the projects submission form to submit a file with their design requirements, along with their name, organization, phone number and email.
 
 - A Staff page, where bootcamp staff can:
 
