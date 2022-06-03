@@ -32,7 +32,7 @@ router.post("/contact", (req, res) => {
 	// this  mail object has the contents of the email.
 	const mail = {
 		from: full_name,
-		to: "dummyemailforcode@gmail.com",
+		to: "dktbootcamp@gmail.com",
 		subject: `Submission from ${full_name} at ${organization}`,
 		html: `<p>Email: ${email} || Phone: ${phone}</p> 
 					<p>${message}<p/>`,

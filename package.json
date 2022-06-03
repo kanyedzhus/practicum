@@ -8,6 +8,8 @@
 	},
 	"dependencies": {
 		"cookie-parser": "~1.4.4",
+		"bcrypt": "^5.0.0",
+		"jsonwebtoken": "^8.5.1",
 		"cors": "^2.8.5",
 		"debug": "~2.6.9",
 		"dotenv": "^16.0.0",
