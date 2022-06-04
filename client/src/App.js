@@ -5,6 +5,7 @@ import ContactForm from "./components/ContactForm";
 import Header from "./components/Header";
 import StaffView from "./components/StaffView";
 import Hero from "./components/Hero";
+import Login from "./components/Login";
 
 function App() {
 	const [projects, setProjects] = useState([]);
@@ -44,6 +45,7 @@ function App() {
 
 	return (
 		<div className="App ">
+			<Login/>
 			<Header
 				showStaffView={showStaffView}
 				setShowStaffView={setShowStaffView}
@@ -68,6 +70,7 @@ function App() {
 					getFilteredList={getFilteredList}
 				/>
 			)}
+
 		</div>
 	);
 }
