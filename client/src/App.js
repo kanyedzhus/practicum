@@ -6,11 +6,13 @@ import Header from "./components/Header";
 import StaffView from "./components/StaffView";
 import Hero from "./components/Hero";
 import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
 	const [projects, setProjects] = useState([]);
 	const [filteredList, setFilteredList] = useState([]);
 	const [showStaffView, setShowStaffView] = useState(false);
+	const [loginView, setLoginView]= useState(false);
 
 	useEffect(() => {
 		fetch("/api/projects/")
@@ -45,7 +47,7 @@ function App() {
 
 	return (
 		<div className="App ">
-			<Login/>
+			<Register/>
 			<Header
 				showStaffView={showStaffView}
 				setShowStaffView={setShowStaffView}
@@ -62,7 +64,11 @@ function App() {
 					/>
 				</div>
 			)}
-			{showStaffView && (
+           {showStaffView && (
+				<Login/> 
+			)}	
+
+			{loginView && (
 				<StaffView
 					projects={projects}
 					setProjects={setProjects}

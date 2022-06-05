@@ -33,6 +33,19 @@ function Login(){
         localStorage.removeItem('token');
     };
 
+    const requestData = async () => {
+        try {
+            const {data} = await axios("/api/index/members-only", {
+                headers:{
+                    authorization: "Bearer" + localStorage.getItem("token"),
+                },
+            });
+            console.log(data.message);
+        } catch(error){
+            console.log(error);
+        }
+    };
+
     return(
         <div>
             <div>
@@ -56,6 +69,11 @@ function Login(){
                 <button className="btn btn-outline-dark ml-2" onClick={logout}>
                     Log out
                 </button>
+            </div>
+            <div>
+            <button className= "btn btn-outline-primary" onClick = {requestData}>
+                Request protected data
+            </button>
             </div>
         </div>
     )
